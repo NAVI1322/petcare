@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome Client</title>
+    <link rel="website icon" href="uploads/clipart635747.png" type="png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/dash-admin.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btnclient").click(function () {
+                location.href = 'manager-client.html';
+            })
+            $("#btnuser").click(function () {
+                location.href = 'manager-user.html';
+            })
+        });
+    </script>
+</head>
+
+<body>
+
+
+    <div class="bg"></div>
+    <!--<div class="bg bg3"></div> -->
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="text-light fs-2 align-middle fw-medium d-flex justify-content-center col-md-12 mt-2"  style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">ADMIN CONTROL</span>
+      </nav>
+      
+    <div class="container  ">
+
+        <form>
+            <div class="row mt-5">
+                <div class="col-md-3 offset-1 ">
+
+                    <div class="profile-card-2" style="background-color: white;"><img src="assets/img/ekartiksharma@gmail.com-user manager.png"
+                            class="img img-responsive">
+
+                        <div class="profile-icons ">
+                            <label for="btnclient"><a  class="bg-transparent fs-3" id="btnclient"
+                                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">Client
+                                Manager</a> </label>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-3 offset-3 ">
+
+                    <div class="profile-card-2" style="background-color: white;"><img src="assets/img/manage.png"
+                            class="img img-responsive" >
+
+                        <div class="profile-icons ">
+                            <label for="btnuser">       <a class="bg-transparent fs-3" id="btnuser"
+                                style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">User
+                                Manager</a></label>
+                        </div>
+        
+            </div>
+        </form>
+
+   
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

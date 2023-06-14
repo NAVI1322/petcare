@@ -1,0 +1,49 @@
+body {
+    background:lightgray;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color:grey;
+}
+
+.profile-button {
+    background:grey;
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background:gray;
+}
+
+.profile-button:focus {
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: black ;
+    box-shadow: none;
+    color:azure;
+}
+
+.back:hover {
+    color:black;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experiences:hover {
+    background:lightslategrey;
+    color: #fff;
+    cursor: pointer;
+    border:3px solid grey;
+
+}
+input:before:disabled{
+    background-color: inherit;
+    
+}

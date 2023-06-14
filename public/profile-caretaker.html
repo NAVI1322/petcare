@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Inner Page - Dewi Bootstrap Template</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/rksharma041976@gmail.com-clipart635747.png" rel="icon">
+    <link href="assets/img/rksharma041976@gmail.com-clipart635747.png" rel="apple-touch-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="assets/js/profile-caretaker.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/profile-client.css">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<script>
+     function setEmail() {
+            $("#care-email").val(localStorage.getItem("activeUser"));
+     }
+</script>
+
+<body onload="setEmail()">
+
+
+    <header id="header" style="background-color:dimgray;">
+        <div class="container d-flex align-items-center justify-content-between bg-transparent">
+    
+          <h1 class="logo mt-2"><a href="index.html">PETNEST</h1>
+        
+          <nav id="navbar" class="navbar bg-transparent">
+            <ul>
+              <li><a class="nav-link scrollto active mt-2" href="dash-caretaker.html">Back</a></li>
+          </nav><!-- .navbar -->
+    
+        </div>
+      </header><!-- End Header -->
+
+
+    <!-- ======= Hero Section ======= -->
+<section id="hero">
+
+     <div class="hero-container mb-5" >
+       
+    
+        <div class="bg"></div>
+        <div class="container rounded bg-white mt-5 mb-3">
+            <form method="get">
+    
+                <div class="row">
+                    <div class="col-md-4 border-right">
+                        <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img
+                                class="rounded-circle mt-5" width="300px" src="assets/img/dog-avatar.jpg"><span
+                                class="font-weight-bold">Edogaru</span><span id="profilemail"
+                                class="text-black-50"></span><span></span></div>
+                    </div>
+                    <div class="col-md-8 border-right">
+                        <div class="p-3 py-5">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="text-right">Profile Settings</h4>
+                                <div id="res" class="text-secondary">*</div>
+                                <input class="btn btn-primary profile-button offset-4" id="care-btnSearch" type="button"
+                                    value="search">
+    
+                            </div>
+                            <div class="row mt-2">
+                                <span class="offset-1 mb-2 text-dark labels" id="res"></span>
+                                <div class="col-md-6"><label class="labels">Username</label><input type="text"
+                                        class="form-control" placeholder="Username" value="" id="care-user">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-6"><label class="labels">Email ID</label><input type="text" readonly
+                                        id="care-email" class="form-control" placeholder="Enter Email" value=""></div>
+                                <div class="col-md-4 ms-2"><label class="labels">Mobile Number</label><input
+                                        id="care-contact" name="mobile" type="text" class="form-control"
+                                        placeholder="Enter Mobile Number"></div>
+                            </div>
+                            <div class="row mt-2">
+    
+                                <div class="col-md-8"><label class="labels">Website/Firm</label><input type="text"
+                                        id="care-firm" class="form-control" placeholder="company"> </div>
+    
+                                <div class="col-md-3 ml-2 "> <label for="state" class="labels">State</label>
+                                    <input type="text" class="form-control" id="care-state" placeholder="State"
+                                        list="stateName">
+                                </div>
+                            </div>
+    
+                            <datalist id="stateName">
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chandigarh">Chandigarh</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                <option value="Daman and Diu">Daman and Diu</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Lakshadweep">Lakshadweep</option>
+                                <option value="Puducherry">Puducherry</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West Bengal">West Bengal</option>
+    
+                            </datalist>
+    
+                            <div class="row mt-3">
+    
+                                <div class="col-md-8"><label class="labels">Address</label><input type="text"
+                                        id="care-address" name="address" class="form-control" placeholder="House Address"
+                                        value="" name="address"></div>
+    
+                                <div class="col-md-3"><label class="labels">City</label><input type="text" id="care-city"
+                                        name="city" class="form-control" value="" placeholder="region"></div>
+                            </div>
+                            <div class="row mt-3">
+    
+                                <div class="col-md-3 mt-3"><label class="labels">Pets</label>
+                                    <select class="ml-1 p-1" size="5" style="overflow: hidden;" class="p-1 " id="care-pet"
+                                        multiple>
+    
+                                        <option value="Dog">Dog</option>
+                                        <option value="Cat">Cat</option>
+                                        <option value="Rabbit">Rabbits</option>
+                                        <option value="Birds">Birds</option>
+                                        <option value="fishes">fishes</option>
+    
+                                    </select>
+                                </div>
+    
+                                <div class="col-md-6 offset-1"><label class="labels">Other Information</label><textarea
+                                        cols="50" rows="5" style="border: 0.3px grey solid;opacity:50%;"
+                                        id="care-comment"></textarea>
+                                </div>
+                            </div>
+                            <div class="mt-5 text-center">
+                                <button class="btn btn-primary profile-button" type="button" id="care-save">Save
+                                    Profile</button>
+                                <button class="btn btn-outline-secondary add-experience offset-1 " type="button"
+                                    id="care-edit">
+                                    Edit Profile </button>
+                            </div>
+            </form>
+        </div>
+    </div>
+
+ </section ><!-- End Hero -->
+
+   
+    
+    <!-- ======= Footer ======= -->
+    <footer id="footer " class="mt-5">
+        
+    </div>
+
+    <div class="container mt-5">
+        <div class="copyright">
+            &copy; Copyright <strong><span>Navi</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+
+
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
